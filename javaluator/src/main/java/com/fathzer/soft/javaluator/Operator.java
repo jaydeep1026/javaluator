@@ -101,7 +101,7 @@ public class Operator {
 		if (this == obj) {
 			return true;
 		}
-		if ((obj == null) || (obj instanceof Operator)) {
+		if ((obj == null) || !(obj instanceof Operator)) {
 			return false;
 		}
 		Operator other = (Operator) obj;
